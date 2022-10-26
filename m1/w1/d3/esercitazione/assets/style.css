@@ -12,6 +12,10 @@ body{
    #principale{
     padding: 0  20%;
    }
+  hr{
+    border-top:   rgb(242, 162, 57);
+}
+  
   
 h1{
 text-align: center;
