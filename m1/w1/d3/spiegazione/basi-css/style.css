@@ -1,0 +1,21 @@
+/*
+
+commento 
+selettore {
+    proprietà/regole:valore alla proprietà;
+}
+*/
+
+div{
+
+
+    color: red !important;
+
+}
+/*
+selettori gerarcici 
+*/
+divi div {
+    color:green;
+    ;
+}
