@@ -1,0 +1,109 @@
+
+
+
+/* IMPOSTAZIONI GENERALI */
+body{
+    background-image: url(/assets/img/sfondo.png);
+    margin:5%;
+}
+main{
+    box-sizing: border-box;
+}
+/* HEADER */
+.header{
+    background-color: rgb(63, 128, 207);
+max-width: 95%;
+margin:0;
+}
+.img{
+    width: 100%;
+}
+.menu{
+    font-family: 'Poppins', sans-serif;
+    font-size:17px;
+    color: white;
+    margin-top: 30px;
+padding: 5px;
+}
+.ul{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    padding: 60px;
+    color: white;
+ text-align: center;
+ list-style:none ;
+}
+
+
+a{
+       padding: 10 px;
+}
+/* MAIN */
+h1{
+   
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+.trasp{
+    opacity: 0.5;
+}
+
+.parti{
+    color: blueviolet;
+}
+.primo{
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+  
+}
+.sec{
+     list-style:circle;
+}
+.le-varie{
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+button{
+    padding: 0;
+
+}
+.li2{
+    list-style: disc;
+    padding: 1 em;
+}
+.lista{
+    list-style: upper-roman;
+    margin:10px;
+    padding-left: 30px;
+}
+.novita{
+    font-family: 'Poppins', sans-serif;
+    font-size: 600;
+    text-align: center;
+}
+.box {
+   color:burlywood;
+border: 2px;
+   border-style: solid;
+}
+
+
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
+footer{
+    border: 2px;
+   
+    background-color: rgba(22, 1, 55, 0.697);;
+    border-style: solid;
+}
