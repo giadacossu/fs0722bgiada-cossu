@@ -1,0 +1,184 @@
+/* Your styles here */
+body{
+   color: #393d41;
+   font-family: 'Open Sans', sans-serif;
+
+    font-size: 1.2rem;
+    line-height: 1.65 ;
+}
+/*header*/
+header{
+    background-color: black;
+    padding: 40px;
+    text-align: center;
+}
+.logo{
+
+    width: 50%;
+}
+/*main*/
+main{
+    text-align: center;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    font-weight: bold;
+   padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.m1{
+    background-image: url(/images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+}
+.p1{
+    font-size: 25px;
+}
+.fake{
+
+    padding: 10px;
+    margin-left:25%;
+    margin-right: 20%;
+    margin-top: 40px;
+    border-style: solid;
+    border: 2px;
+    background-color:#f04c2f;
+    border-radius: 6px;
+
+    
+ 
+}
+.a1{
+        color: white;
+       text-decoration: none;
+       font-weight: bold;
+       font-size: 20px;
+
+}
+/*MAIN PARTE 2*/
+.m2{
+    margin-top: 5px;
+    margin-bottom:20px ;
+    padding: 20px;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+   font-weight:bold;
+ 
+    margin-top: 40px;
+}
+.p2{
+    margin: 2px;
+    padding: 2px;
+}
+.img1{
+    width: 80%;
+    border-radius: 70%;
+}
+/*aside*/
+aside{
+    text-align: center;
+}
+.as1{
+    padding: 20px;
+
+    border-style: solid;
+    border: 2px;
+    background-color:#f04c2f;
+   
+}
+h2{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 30px;
+
+}
+
+.p3{
+    color: white;
+    font-family: 'Open Sans', sans-serif; 
+    margin: 20px;
+    font-size: 16px;
+
+  
+}
+.p4{
+      font-style: italic;
+}
+.mario{
+    color: white;
+    margin-top: 10px;
+
+}
+.ceo{
+    font-size: 12px;
+    color: white;
+    margin-bottom: 10px;
+}
+/*aside parte 2*/
+figure{
+
+    border: 1px;
+    border-color: #dee1e360;
+    border-radius: 5px;
+
+    border-style: groove;
+}
+.figure1{
+    margin-top: 30px;
+}
+.as2{
+      margin: 30px;
+     
+}
+
+.img2{
+width: 100%;
+}
+.as3{
+    margin: 30px;
+}
+.p6{
+padding: 10px;
+ font-size: 16px;
+}
+
+/*footer*/
+footer{
+        text-align: center;
+        padding: 20px;
+        border-style: solid;
+        border: 2px;
+        background-color:#25a2c3;
+}
+.lista{
+  
+    color: #c8e7f0;
+    list-style: none;
+    font-weight: 300;
+}
+.block{
+    display: block;
+}
+i{
+    padding: 5px;
+    color: white;
+}
+hr{
+    margin-top: 30px;
+    width: 220px;
+}
+.last{
+    padding: 20px;
+    color: #c8e7f0;
+    font-size: 15px;
+}.u{
+    padding: 5px;
+}
