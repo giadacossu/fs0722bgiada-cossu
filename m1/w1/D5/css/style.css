@@ -179,6 +179,12 @@ hr{
     padding: 20px;
     color: #c8e7f0;
     font-size: 15px;
-}.u{
+}
+.u{
     padding: 5px;
+}
+.last{
+    padding: 20px;
+    color: #c8e7f0;
+    font-size: 15px;
 }
