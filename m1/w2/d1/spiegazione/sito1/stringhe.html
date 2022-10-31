@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var stringa = 'ciao'
+var stringa = "ciao"
+
+/*document.write("<div class="testo-rosso"></div>")*/
+document.write("<div class=\"testo-rosso\"> Div creato </div>")
+//interpolazione di stringhe 
+document.write(`<div class=\"testo-rosso\"> Div creato </div>`)
+
+// concatenamento 
+var nome = 'mario'
+var saluto = 'benvenuto'
+document.write(saluto+ '  ' + nome+ ', come stai?' )
+document.write(`${saluto} ${nome}, come stai `)
+
+//operazioni matematiche 
+console.log(4 + 3)
+console.log(4 * 3)
+
+//operazioni miste 
+var numero = 5 
+var numeroStringa = '5' //non è un numero ma una stringa 
+console.log (numero+numeroStringa) //il numero viene convertito in stringa
+console.log (numero*numeroStringa) // c'è una moltiplicazione quindi la stringa viene convertita in numero 
+
+
+    </script>
+</body>
+</html>
