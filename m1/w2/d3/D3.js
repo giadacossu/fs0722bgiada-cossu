@@ -69,7 +69,7 @@ console.log (a + b)
 let item1 = 10
 let item2 = 25 
 let item3 = 15 
-if ((item1 + item2 + item3) >= 50  ){
+if ((item1 + item2 + item3)  ){
   console.log ('hai diritto alla spedizione gratuita ')
 } else if ((item1 + item2 + item3 ) < 50 ){
 
@@ -85,10 +85,11 @@ if ((item1 + item2 + item3) >= 50  ){
 let item4 = 10
 let item5 = 25
 let item6 = 15 
-let sconto = 20%''
-if (((item4 - sconto )+ (item5 - sconto ) + (item6 - sconto) >= 50  ) ) {
+
+
+if (((item4 / 100  * 20)+ (item5 / 100  * 20 ) + (item6 / 100  * 20 ) > 50 ) ) {
   console.log ('hai diritto alla spedizione gratuita ')
-} else if ((item4 - sconto )+ (item5 - sconto ) + (item6 - sconto) < 50 ){
+} else if ((item4  / 100  * 20 )+ (item5  / 100  * 20 ) + (item6  / 100  * 20) < 50 ){
 
   console.log ('la spedizione è 10 euro')
 }
@@ -102,55 +103,94 @@ if (((item4 - sconto )+ (item5 - sconto ) + (item6 - sconto) >= 50  ) ) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let c = 8
+let d = 6
+let e = 2
+if (c > d, e ){
+  console.log (8 > 6)
+
+}else if ( d > e) {
+  console.log(6 > 2 )
+} else {
+  console.log (2 < 6, 8)
+}
+
+
+
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
+
 /* SCRIVI QUI LA TUA RISPOSTA */
+let z = 'Ciao'
+if (typeof test === 'number') {
+  console.log('è un numero!')
+} else {
+  console.log('non è un numero!')
+}
+
+
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let g = 4
+
+function isEven(g) {
+return g % 2 === 0;
+
+} 
+
+
+
 
 /* ESERCIZIO 10
-  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
+  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.*/
   let val = 7
   if (val < 10) {
       console.log("Meno di 10");
-    } else if (val < 5) {
-      console.log("Meno di 5");
+    } else if (val > 5) {
+      console.log( " maggiore di 5");
     } else {
       console.log("Uguale a 10 o maggiore");
     }
-*/
+
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+ 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
 
+
+/* SCRIVI QUI LA TUA RISPOSTA */
 const me = {
   name: 'John',
   lastName: 'Doe',
+  city: 'Toronto',
   skills: ['javascript', 'html', 'css'],
+  
 }
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log (me)
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName; 
+console.log( me)
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+delete me.skills;
+console.log(me)
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
@@ -158,8 +198,15 @@ const me = {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+var array = []
+array.push (1,2,3,4,5,)
+console.log (array)
+
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+var last_element = array[ array.length - 1];
+console.log(last_element-1)
