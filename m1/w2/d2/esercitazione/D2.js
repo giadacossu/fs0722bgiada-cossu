@@ -24,7 +24,7 @@ console.log (booleano)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const nome = 'giada'
+var nome = 'giada'
 console.log (nome)
 
 /* ESERCIZIO 3
@@ -51,7 +51,8 @@ console.log(x)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-//const nome = 'cossu '
+const enome = 'cossu'
+console.log (enome)
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
