@@ -1,0 +1,65 @@
+body{
+    background-color:rgb(246, 172, 242);
+  
+}
+h1{
+    color:black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenitore{
+border-style: solid;
+border-color: white;
+border-radius: 20px;
+width: 22%;
+height: 80vh;
+margin:0 auto;
+margin-top: 60px;
+text-align: center;
+padding: 20px;
+background-color: chartreuse;
+
+}
+
+
+#numeri {
+ text-align: center;
+margin: 15%;
+margin-left: 1px;
+width: 80%;
+padding: 30px;
+border-color: white;
+}
+
+
+.head {
+    display: flex;
+    flex-wrap: nowrap;
+    padding:20px
+}
+
+
+.bottoni{
+    padding: 2em;
+  margin: 0 ;
+  background-color: deeppink; 
+  border-color: white;
+color: white;
+}
+
+.canc{
+
+    width: 2%;
+}
+
+
+.tot{
+    padding: 2em;
+    background-color: deeppink;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 10px;
+    border-color: white;
+    color: white;
+}

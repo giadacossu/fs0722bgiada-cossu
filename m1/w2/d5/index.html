@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <head>
+
+    </head>
+    <main>
+         <h1>LA CALCOLATRICE </h1>
+
+    <div class="contenitore">
+
+        <input id="numeri" placeholder="0" type="text"> 
+   <div class="c">
+        <button  class='bottoni' data-simbolo="+" onclick="aggiungiC(this)">+</button>
+        <button  class='bottoni'data-simbolo="/" onclick="aggiungiC(this)">/</button>
+        <button class='bottoni'data-simbolo="*" onclick="aggiungiC(this)">x</button>
+        <button class='bottoni'data-simbolo="%" onclick="aggiungiC(this)">%</button>
+  
+        <button class='canc, bottoni 'data-simbolo="◄"  onclick="cancella();(this)"><ion-icon name="backspace-outline"></ion-icon> </button>
+        <button class='bottoni'data-simbolo="c" onclick="eliminaTutto(this)">c</button>
+       
+        <button class='bottoni' data-simbolo="1" onclick="aggiungiCifra(this)">1</button>
+        <button class='bottoni' data-simbolo="2" onclick="aggiungiCifra(this)">2</button>
+        <button class='bottoni' data-simbolo="3" onclick="aggiungiCifra(this)">3</button>
+        <button class='bottoni' data-simbolo="4" onclick="aggiungiCifra(this)">4</button>
+      
+       
+        <button class='bottoni' data-simbolo="5" onclick="aggiungiCifra(this)">5</button>
+        <button class='bottoni' data-simbolo="6" onclick="aggiungiCifra(this)">6</button>
+        <button class='bottoni'data-simbolo="7" onclick="aggiungiCifra(this)">7</button>
+        <button class='bottoni'data-simbolo="8" onclick="aggiungiCifra(this)">8</button>
+        <button class='bottoni' data-simbolo="9" onclick="aggiungiCifra(this)">9</button>
+        <button class='bottoni' data-simbolo="0" onclick="aggiungiCifra(this)">0</button>
+       
+         <button class='bottoni, tot' class="uguale" onclick="tot()">=</button>  
+        </div>
+    </div>
+    
+</main>
+
+<footer></footer>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="index.js" > </script>
+</body>
+</html>
