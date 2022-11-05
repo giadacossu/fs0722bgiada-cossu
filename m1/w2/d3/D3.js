@@ -40,13 +40,13 @@ console.log( 'not equal', n )
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-let f = 5
-let h = 25
-if ( f % h ){
-  console.log ('divisibile per 5')
-}else if ( 'non disvisibile' )
-console.log ( f ,' % 5')
+let c1 = 5
+let c2 = (c1 % 5)
+if ( c2 == typeof Number ){
+    console.log('è divisibile per 5 ')
+} else {
+    console.log ('non divisibile')
+}
 
 
 
@@ -55,10 +55,14 @@ console.log ( f ,' % 5')
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let a = 4
-let b = 4 
-console.log (a + b)
 
+let a1 = 2
+let b = 8
+if (a1 == 8 || b == 8 ){
+console.log ('almeno uno è uguale a 8')
+}else {
+  console.log ('nessun numero è uguale a 8 ')
+}
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
@@ -66,14 +70,12 @@ console.log (a + b)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let item1 = 10
-let item2 = 25 
-let item3 = 15 
-if ((item1 + item2 + item3)  ){
-  console.log ('hai diritto alla spedizione gratuita ')
-} else if ((item1 + item2 + item3 ) < 50 ){
-
-  console.log ('la spedizione è 10 euro')
+let totalShoppingCart =20
+let spedizione = 10 
+if ( totalShoppingCart > 50 ){
+console.log ( 'congratulazioni hai ottenuto la spedizione gratuita ')
+} else {
+    console.log( 'il tuo totale è ', totalShoppingCart + spedizione )
 }
 
 /* ESERCIZIO 6
@@ -82,18 +84,13 @@ if ((item1 + item2 + item3)  ){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let item4 = 10
-let item5 = 25
-let item6 = 15 
 
 
-if (((item4 / 100  * 20)+ (item5 / 100  * 20 ) + (item6 / 100  * 20 ) > 50 ) ) {
-  console.log ('hai diritto alla spedizione gratuita ')
-} else if ((item4  / 100  * 20 )+ (item5  / 100  * 20 ) + (item6  / 100  * 20) < 50 ){
-
-  console.log ('la spedizione è 10 euro')
+if (totalShoppingCart / 100 * 80 > 50){
+  console.log ( 'congratulazioni hai ottenuto la spedizione gratuita ')
+} else if(totalShoppingCart / 100 * 80 <= 50){
+console.log ('il tuo totale è ', (totalShoppingCart  / 100 * 80) + spedizione )
 }
-
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -103,17 +100,14 @@ if (((item4 / 100  * 20)+ (item5 / 100  * 20 ) + (item6 / 100  * 20 ) > 50 ) ) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let c = 8
-let d = 6
-let e = 2
-if (c > d, e ){
-  console.log (8 > 6)
-
-}else if ( d > e) {
-  console.log(6 > 2 )
-} else {
-  console.log (2 < 6, 8)
+let d = 9
+let e = 8
+let f = 6 
+if (d > e && f && e > f  ){
+console.log ( d, e, f)
 }
+
+
 
 
 
@@ -137,14 +131,15 @@ if (typeof test === 'number') {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
 let g = 4
-
-function isEven(g) {
-return g % 2 === 0;
-
-} 
-
-
+let risultato = ( g % 2 )
+if (risultato == 0 ){
+console.log ('è pari ')
+}else {
+    console.log('non è pari ')
+}
 
 
 /* ESERCIZIO 10
@@ -170,11 +165,10 @@ return g % 2 === 0;
 const me = {
   name: 'John',
   lastName: 'Doe',
-  city: 'Toronto',
   skills: ['javascript', 'html', 'css'],
   
 }
-console.log (me)
+me.city = 'toronto'
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
@@ -208,5 +202,5 @@ console.log (array)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-var last_element = array[ array.length - 1];
-console.log(last_element-1)
+array.pop()
+console.log (array)

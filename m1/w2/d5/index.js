@@ -1,5 +1,9 @@
-function aggiungiCifra (bottone){
-    document.getElementById('numeri').value += bottone.getAttribute('data-simbolo')
+function aggiungiCifra (bottone){ 
+
+  
+document.getElementById('numeri').value += bottone.getAttribute('data-simbolo')
+  
+     
 }
 
 function eliminaTutto (){
@@ -8,26 +12,39 @@ function eliminaTutto (){
 
 
 
-function cancella(bottone) {
-    let numeri = document.getElementById('numeri')
-    numeri.value = eval(numeri.value -1)
-  }
+function cancella() {
+  document.getElementById('numeri').value += bottone.getAttribute(numeri.value -1)
+}
+
+function aggiungiC (bottone){
+ 
+  let text = numeri.value;
+  last = text[text.length-1];
   
 
-function aggiungiC ( bottone){
- 
-    document.getElementById('numeri').value += bottone.getAttribute('data-simbolo')
+
+    if (last != '+' &&  last != '/' && last != '*' &&  last !='-' &&  last !='%' ){
+      document.getElementById('numeri').value += bottone.getAttribute('data-simbolo')
+
+    } 
+    
   
-    }
+
+}
 
 
 function tot (){
-    let numeri = document.getElementById('numeri')
-    numeri.value = eval(numeri.value)
+    let numeri = document.getElementById("numeri");
+    numeri.value = eval(numeri.value);
 } 
 
 
-  
+
+
+
+
+
+
 /*function aggiungiCifra()  {
   document.getElementById('numeri').value += bottone.getAttribute('data-simbolo')
 }

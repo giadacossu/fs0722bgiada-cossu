@@ -41,13 +41,15 @@ border-color: white;
 
 
 .bottoni{
-    padding: 2em;
+    padding:2em;
   margin: 0 ;
   background-color: deeppink; 
   border-color: white;
 color: white;
 }
-
+.bottoni:hover {
+    color: rgba(215, 117, 222, 0.391);
+}
 .canc{
 
     width: 2%;
@@ -62,4 +64,7 @@ color: white;
     margin-top: 10px;
     border-color: white;
     color: white;
+}
+.tot:hover {
+    color:  rgba(215, 117, 222, 0.391);
 }

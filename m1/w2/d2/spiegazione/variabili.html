@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+
+var a = 0
+{
+
+    var b = 1
+console.log(a , 'ciao')
+}
+console.log(b)
+
+let c = 2 //questa è globale, sarà raggiungibile dai blocchi successivi
+{
+    console.log (c)
+    let d = 4
+
+}
+//le variabili let sono soggete a blockscope
+//console.log (d) questa non è disponibile perche let non puo uscire dai blocchi 
+
+let f //l'inizializzazione in questo caso determina uno scope globale 
+{
+    f = 5
+}
+console.log (f)
+var test = 6
+
+{
+    //qua prenderà quella interna e non quella globale 
+    let test = 7
+    console.log(test)
+}
+
+//scope delle funzioni 
+function prova (){
+    var h = 8 // LE VAR ALL'INTERNO DELLE FUNZIONI NON SONO FRUIBILI AL DI FUORI 
+} 
+//console.log(h)
+
+//CONST HANNO SEMPRE LE MAIUSCOLE E LE SEPARI CON _
+  const NOME_COSTANTE = 'prova'
+//NOME_COSTANTE = provaPROVA
+console.log(NOME_COSTANTE)
+
+const OGGETTO = {
+    nome: 'mario'
+}
+
+ OGGETTO.nome = 'roberta'
+ console.log(OGGETTO.nome)
+
+
+    </script>
+</body>
+</html>

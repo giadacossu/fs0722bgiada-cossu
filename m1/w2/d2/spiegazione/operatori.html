@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let testo = 'ciao'
+testo = 'benvenuto' // = il vecchio valore è stato eliminato
+
+testo += 'mario' // + va ad aggiungere il nuovo valore alla fine
+console.log (testo)
+
+
+let a = 2 
+a += 2 
+
+console.log (a)
+a -= 2 
+console.log (a)
+
+
+
+
+//operatori di confronti 
+
+let b = 10 
+console.log (b < 10 )//false
+console.log (b > 10 )//false
+console.log (b >= 10 )//true
+
+console.log (b <= 10 )//true
+
+console.log (b == 10 )//true uguale
+console.log( b != 10)//false
+console.log (b == '10' ) //false
+console.log (b === 10 )//true
+console.log (!(b == 10 ))//le prime parentisi daranno un true 
+
+
+
+//operatore ternario 
+let anni = 30
+let consenso = anni >= 18 ? 'puoi accedere ' : 'accesso negato'
+
+console.log (consenso)
+
+    </script>
+</body>
+</html>
