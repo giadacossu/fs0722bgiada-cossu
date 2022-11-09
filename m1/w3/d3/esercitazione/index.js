@@ -23,7 +23,7 @@ document.querySelector('#lista').append(div)
 
 
 fatto.addEventListener('click', function(){
-    div.classList.add('Agreen')
+    div.classList.add('Agreen') 
  })
    
  
