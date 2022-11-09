@@ -25,6 +25,15 @@ body{
 .aggiunti {
     background-color: antiquewhite;
 }
+.Agreen{
+    background-color: greenyellow;
+}
 .aggiunti button{
     margin: 50 px;
+}
+.aggiuntibottone{
+    margin: 20px;
+    background-color: rgba(210, 105, 30, 0.566);
+    border-radius: 10px;
+    padding: 9px;
 }
