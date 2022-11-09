@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+    background-color: burlywood;
+}
+.contenitore{
+    border-style: solid;
+    border: 2 px;
+    width:40%;
+    height: 40vh;
+    margin: auto;
+    margin-top: 50px;
+}
+#text{
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+#salva{
+    background-color: rgba(210, 105, 30, 0.566);
+    margin: auto;
+    border-radius: 10px;
+ padding: 15px;
+ margin: 10px;
+}
+.aggiunti {
+    background-color: antiquewhite;
+}
+.aggiunti button{
+    margin: 50 px;
+}
