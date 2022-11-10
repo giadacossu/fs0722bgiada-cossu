@@ -4,8 +4,8 @@ if( testo = document.querySelector('#text').value != ''){
     let testo = document.querySelector('#text').value;
 
     let div = document.createElement('div');
-    div.textContent = testo ;//gli dico che dentro div ci sara il testo che scrivono
-    div.classList.add('aggiunti')//gli do uno stile
+    div.textContent = testo ;
+    div.classList.add('aggiunti')
 
     let fatto = document.createElement('button')
     fatto.textContent = 'fatto'

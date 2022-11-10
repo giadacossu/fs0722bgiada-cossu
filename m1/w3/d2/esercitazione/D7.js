@@ -17,7 +17,13 @@ const concatenate = function (str1,str2){
 }
 concatenate('luca', 'ciao')
 
+function name1 (a,b){
+  let stringa = a.slice(0,2) + b.slice(-3)
+  let stringa2= stringa.toUpperCase()
 
+return stringa2
+}
+console.log (name1('hello','buddy'))
 
 /* ESERCIZIO 2
   Scrivi una funzione per creare un array di soli valori DISPARI da 1 a 100.
@@ -28,7 +34,15 @@ concatenate('luca', 'ciao')
  arr.push (i)
  }
  }
- console.log (arr)
+
+
+  let array1 = []
+  for (let i= 0; i < 100 ; i++ ){
+    if (i % 2 != 0 ){
+array1.push(i)
+    }
+  }
+  console.log ( array1)
 
 /* ESERCIZIO 3
   Scrivi una funzione per creare un array di soli valori multipli di 5, da 1 a 100.
@@ -41,6 +55,15 @@ for ( let i = 0 ; i <= 100; i++){
 }
 console.log ( Arr)
 
+
+let array2 = []
+for (let i = 0 ; i < 100 ; i++){
+if (i % 5 === 0 ){
+array2.push(i)
+}
+}
+console.log ( array2)
+
 /* ESERCIZIO 4
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
  */
@@ -49,7 +72,10 @@ for (let i = 0 ; i <10 ; i ++){
 arrayy.push (Math.round(Math.random() *100))
 }
 console.log(arrayy)
-
+let array3 = []
+for (let i = 0 ; i < 100 ; i++){
+  array3.push (Math.round ( Math.random()*100))
+}console.log ( array3)
 
 /* ESERCIZIO 5
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici.
@@ -64,6 +90,9 @@ function ritornaArrayPari(arr){
 }
  }
 */                                                                                               
+
+
+
 
 const findEvenNumbers = function (arr) {
   let evenArray = []
@@ -82,6 +111,13 @@ findEvenNumbers(array)
 /* ESERCIZIO 6
   Scrivi una funzione per sommare a catena i numeri contenuti in un array.
  */
+
+function array6 ( ... numeri ){
+  return numeri.reduce(function(c,d){return c+ d})
+}
+let somma = array6( 1,2,3,4,5)
+
+console.log (somma)
 
 /* ESERCIZIO 7
   Scrivi una funzione per incrementare di 1 tutti i valori numerici in un array.
