@@ -1,6 +1,7 @@
 <html>
   <head>
     <style>
+      .titolo
       .myHeading {
         color: red;
       }
@@ -8,9 +9,7 @@
       .verde {
         background-color: lightgreen;
       }
-      .myclass {
-        color: blueviolet;
-      }
+    
     </style>
   </head>
   <body>
@@ -82,10 +81,12 @@
 
       const addClassToTitle = function () {
         //
-          let titolo = document.querySelector('h1')
+         let titolo = document.querySelector('h1')
 
         titolo.classList.add('myHeading')
-      
+       /*let title = document.querySelector('h1')
+      title.classList.remove('my class')
+      title.classList.add('myHeading')*/
 
 
       }
@@ -97,7 +98,7 @@
 
       const changePcontent = function () {
         //
-        let p = document.querySelectorAll('div') ;
+        let p = document.querySelectorAll('div p') ;
        for ( let i = 0 ; i < p.length ; i++){
         p[i].classList.add('myHeading')
        }
@@ -115,11 +116,12 @@
       const changeUrls = function () {
         //
 
-      let link = document.querySelectorAll('a')
+      /*let link = document.querySelectorAll('a')
       for(let i = 0; i < link.length ; i++){
         link[i].setAttribute('href', 'https://www.google.com')
-      }
-
+      }*/
+      let link = document.querySelector('a')
+      link.href = "https://www.google.com"
 
       }
 
@@ -133,16 +135,14 @@
 
       const addToTheSecond = function (content) {
         //
-     let lista = document.querySelector('ul')
+  let lista = document.querySelector('#secondList')
     let li = document.createElement('li')
-    li.appendChild(document.createTextNode('quarto'))
+    li.textContent=content
+    lista.appendChild(li)
     
       }
-          
-          
-
-      
-      addToTheSecond()
+ 
+      addToTheSecond('quarto')
 
       /* ESERCIZIO 6
        Scrivi una funzione per aggiungere un secondo paragrafo al primo div.
@@ -151,15 +151,15 @@
       const addParagraph = function (content) {
         //
 
-        let firstDiv = document.querySelector('div')
+        let firstDiv = document.querySelector('div p')
          let para = document.createElement('p')
-         para.textContent= 'paragrafo'
+         para.textContent= content
           firstDiv.appendChild(para)
 
 
 
       }
-      addParagraph()
+      addParagraph('nuovo paragrafo')
 
       /* ESERCIZIO 7
        Scrivi una funzione per far scomparire la prima lista non-ordinata.
@@ -191,24 +191,22 @@
 
       /* ESERCIZIO 9
        Rendi il tag h1 capace di cambiare colore del testo ogni volta che l'utente ci clicca sopra.
-      */
+     
      
  
       const makeItClickable = function () {
       //
-
-document.querySelector('h1').addEventListener( 'click',function(){
-let titolo = document.querySelector('h1')
-titolo.classList.add('myclass')
- })
+        let h1 = document.querySelector('h1')
+        h1.addEventListener('click', ()=>{
+          h1.classList.add('titolo')
+        })
  }
-
 
  
 
      
     
-      makeItClickable()
+      makeItClickable()*/
 
        
       
@@ -216,10 +214,14 @@ titolo.classList.add('myclass')
        Cambia il testo del footer con qualcos'altro quando l'utente ci clicca sopra.
       */
 
-      const changeFooterText = function () {
+      const changeFooterText = function  () {
         //
+        let footer =document.querySelector('footer')
+        footer.addEventListener('click', ()=>{
+      footer.classList.add('titolo')
+        })
         }
-
+        changeFooterText('footer')
       /* ESERCIZIO 11
        Aggiungi un event listener al campo di testo nella pagina e fai in modo che dopo ogni lettera il suo valore venga mostrato in console.
       */
