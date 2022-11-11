@@ -244,17 +244,17 @@ function onlyLetters (){
 onlyLetters()
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
- //////////////////////////////////////////torna a controllare
+
 function isThisAnEmail (){
-  let email = 'giadacossu2000@gmail.com'
-  let valido = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?: \.[a-zA-Z0-9-]+)*$/
-  if ( email.vale.match (valido)){
-console.lgo ('ok')
-  }else {
-    console.log('no')
-  }
+let a = new RegExp('[a-z0-9]+-[a-z](2,3)')
+let b = ['giadacossu100@gmail.com']
+b.forEach((indirizzo) => {
+  console.log(a.test(indirizzo))
+  
+});
 }
-isThisAnEmail()*/ 
+isThisAnEmail()
+
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
@@ -277,17 +277,32 @@ whatDayIsIt()
       values: [3, 3, 4]
   }
 */
+function rollTheDices(val){
+let a =[]
+let b = []
+for ( let i = 0  ; i < val; i++)
+b.push(dice())
+a.value = b 
+a.sun= eval (b.join('+'))
+console.log(a)
 
-/* ESERCIZIO 9
-  Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
-*/
-
-function howManyDays (){
-  let oldData = (2022 -9-31)
- let data = (2022-10- 11)
-if (data % oldData){}
 }
- howManyDays ()
+rollTheDices()
+/* ESERCIZIO 9
+  Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.*/
+
+  let oldData = new Date(2022 -9-30)
+ let data = new Date(2022-10- 11)
+
+
+ let differenza = data.getTime() -oldData.getTime()
+ 
+ let diff = differenza / (1000 * 60 * 60 * 24)
+ 
+ console.log(diff)
+
+
+
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
@@ -295,9 +310,9 @@ function isTodayMyBirthday(){
 let mybirthday = ( 2000-10-25)
 let today = new Date ()
 if (mybirthday==today){
-return false
+console.log( true)
 }else {
-  return true;
+  console.log( false)
 }
 
 }
@@ -323,9 +338,7 @@ deleteProp()*/
 function newestMovie (){
 
 for( let i = 0 ; i < movies.length; i++){
-if ( movies.years > 2021 ){
 
-}
   
 }
 }
@@ -333,12 +346,15 @@ newestMovie()
 
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
-*/
+
 function countMovies (){
   for( let i = 0 ; i < movies.length; i++){
-}
-} 
+  [i].Math.max()
 
+    console.log()
+  }
+} 
+countMovies()*/
 
 /* ESERCIZIO 14
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
@@ -369,18 +385,24 @@ function countMovies (){
 
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
-*/ 
-let select = document.querySelector('#container')
+*/ function es20 () {
+  let select = document.getElementById ('container')
+}
+
 
 
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
-*/ let td = document.querySelectorAll('td')
+*/ function es21(){
+  let td = document.querySelectorAll('td')
+}
+es21()
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
 function es22 (){
+
   for (let i = 0 ; i < td.length; i++){
 td[i].textContent = 'non so '
 
@@ -398,17 +420,45 @@ function es23 (){
   }
  
 }
+es23()
+
+
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
 
+function es24(){
+let lista = document.querySelector('ul')
+let item = document.createElement('li')
+item.textContent = 'quarto'
+lista.appendChild(item)
+}
+es24()
+
+
+
+
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
+function es25(){
+  document.getElementById('myList')
+  myList.textContent = ''
+
+}
+es25()
 
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
+function es26(){
+  let tr = document.querySelectorAll('tr')
+  for (let i = 0 ; i< tr.length; i++){
+    tr[i].classList.add('test')
+
+  }
+
+}es26()
 
 // [EXTRA] JS Avanzato
 
