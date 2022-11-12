@@ -129,22 +129,22 @@ REGOLE
   Crea una variabile chiamata "sum" e assegnaci il risultato della somma tra i valori 10 e 20.
 */
 
-let a = 10 
+let a = 10 //creo una variabile 
 let b = 20 
-let sum = a + b
+let sum = a + b // sommo le variabili 
  console.log(sum)
 
 /* ESERCIZIO B
   Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 (deve essere generato dinamicamente a ogni esecuzione).
 */
 
-let random = Math.floor(Math.random()* 20 )
+let random = Math.floor(Math.random()* 20 )// creo una variabile e ottengo un numero casuale tra 0 e 20 
 console.log(random)
 
 /* ESERCIZIO C
   Crea una variabile chiamata "me" e assegnaci un oggetto contenente le seguenti proprietà: name = il tuo nome, surname = il tuo cognome, age = la tua età.
 */
- let me = {
+ let me = { //creo un'oggettoe gli do le proprieta
   name : 'giada',
   surname : 'cossu ',
   age : '22',
@@ -157,13 +157,13 @@ console.log(random)
 /* ESERCIZIO D
   Crea del codice per rimuovere programmaticamente la proprietà "age" dall'oggetto precedentemente creato.
 */
-delete me.age
+delete me.age // uso delete per rimuovere age 
 /* ESERCIZIO E
   Crea del codice per aggiungere programmaticamente all'oggetto precedentemente creato un array chiamato "skills", contenente i linguaggi di programmazione che conosci.
 */
 
-let array = ['javascript','css']
-me['skills'].push(array)
+let array = ['javascript','css']// creo un'array 
+me['skills'].push(array)//aggiungo l'array a skills
 
 /* ESERCIZIO F
   Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".*/
@@ -179,8 +179,8 @@ array.pop()
 /* ESERCIZIO 1
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
-function dice (){
-let numero = Math.ceil(Math.random()*6)
+function dice (){// creo la funzione 
+let numero = Math.ceil(Math.random()*6)// creo una variabile e uso math per cercare un numero random tra 1 e 6 
 console.log (numero)
 }
 dice()
@@ -188,9 +188,9 @@ dice()
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
 function whoIsBigger() {
-  let a = 14 
+  let a = 14  //creo una variabile 
   let b = 8
-  if (a> b){
+  if (a> b){// faccio una cmparazione tra le due e se a è maggiore di b allora :
 console.log ( a, 'è piu grande di ', b)
   }else {
     console.log(b, 'è piu grande di  ' ,a)
@@ -204,9 +204,9 @@ whoIsBigger()
 
   Es.: splitMe("I love coding") => ritorna ["I", "Love", "Coding"]
 */
-function splitMe() {
-  let stringa = 'ciao come stai '
-  let array = stringa.split('')
+function splitMe() {// creo la funzione 
+  let stringa = 'ciao come stai '// creo la stringa
+  let array = stringa.split('')//uso split che scompone la stringa in array 
   console.log (array)
   
 }
@@ -219,7 +219,7 @@ splitMe()
 function deleteOne (){
   let b = true 
   let string = 'javascript'
-  if (b === true ){
+  if (b === true ){// 
   let t = string.slice(1,10)
 console.log(t)
   } else{
@@ -243,7 +243,7 @@ function onlyLetters (){
 }
 onlyLetters()
 /* ESERCIZIO 6
-  Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
+  Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.*/
 
 function isThisAnEmail (){
 let a = new RegExp('[a-z0-9]+-[a-z](2,3)')
@@ -307,9 +307,9 @@ rollTheDices()
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
 function isTodayMyBirthday(){
-let mybirthday = ( 2000-10-25)
-let today = new Date ()
-if (mybirthday==today){
+let mybirthday = ( 2000-10-25)// creo la variabile 
+let today = new Date ()// creo la variabile con la data attuale 
+if (mybirthday==today){// se la data attuale è uguale alla prima data allora 
 console.log( true)
 }else {
   console.log( false)
@@ -323,54 +323,92 @@ isTodayMyBirthday()
 
 /* ESERCIZIO 11
   Scrivi una funzione chiamata "deleteProp" che riceve un oggetto e una stringa come parametri; deve ritornare l'oggetto fornito dopo aver eliminato
-  in esso la proprietà chiamata come la stringa passata come secondo parametro.
+  in esso la proprietà chiamata come la stringa passata come secondo parametro.*/
 
-let obj = {}
-let c = 'stringa'
-function deleteProp( obj , c){
-  console.log(deleteProp)
-remove c 
-}
-deleteProp()*/
+
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
-function newestMovie (){
-
-for( let i = 0 ; i < movies.length; i++){
-
-  
+const newestMovie = function (movies) {
+  let nuovoFilm = movies[0]
+  let annoM = movies[0].Year
+  for (let film of movies) {
+    if (film.Year > annoM) {
+      nuovoFilm = film
+    }
+  }
+  return nuovoFilm
 }
-}
-newestMovie()
+
+console.log(newestMovie(movies))
 
 /* ESERCIZIO 13
-  Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
+  Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.*/
 
-function countMovies (){
-  for( let i = 0 ; i < movies.length; i++){
-  [i].Math.max()
-
-    console.log()
+  function countMovies(){
+  const countMovies = function (array) {// chiamo la funzione 
+    return array.length// ottengo la lunghezza dell'array
   }
-} 
-countMovies()*/
+  
+  console.log(countMovies(movies))
+}
+countMovies()
 
 /* ESERCIZIO 14
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
 */
+function onlyTheYears (array){
+  let filmAnno = []; // creo un array
+  for (let year of array) { // lo ciclo 
+    filmAnno.push(year.Year);// faccio un push
+  }
+  return filmAnno;
+}
+
+console.log(onlyTheYears(movies))
+
+
 
 /* ESERCIZIO 15
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
-*/
+  
+*/ function onlyInLastMillennium (array) {
+  let arr = []// creo un array
+  for (let film of array) {
+    if (film.Year < 2000) {
+      arr.push(film)
+    }
+  }
+  return arr
+  }
+
+console.log(onlyInLastMillennium(movies))
+
 
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
-*/
+*/ 
+const sumAllTheYears = function (arr) {
+  let sum = 0
+  for (let elemento of arr) {
+    sum += Number(elemento.Year)
+  }
+  return sum
+}
+
+console.log(sumAllTheYears(movies))
 
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
+function searchByTitle(){
+  let ave = 'avengers' 
+  for (let film of array){
+
+
+  }
+
+}
 
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
@@ -403,8 +441,8 @@ es21()
 */
 function es22 (){
 
-  for (let i = 0 ; i < td.length; i++){
-td[i].textContent = 'non so '
+  for (let i = 0 ; i < td.length; i++){// ciclo i td e dentro ognuno di essi scrivo 
+    td[i].textContent = 'non so '
 
   }
 }
@@ -414,12 +452,11 @@ es22()
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
 function es23 (){
-  let link = document.querySelectorAll('a')
-  for (let i = 0 ; i < link.length; i++){
- link[i].classList.add('link')
-  }
+  let link = document.querySelectorAll('a')//seleziono i link
+  for (let i = 0 ; i < link.length; i++){// li ciclo per prenderli tutti 
+ link[i].classList.add('link')// ad ognuno di loro do la classe link 
  
-}
+}}
 es23()
 
 
@@ -428,9 +465,9 @@ es23()
 */
 
 function es24(){
-let lista = document.querySelector('ul')
-let item = document.createElement('li')
-item.textContent = 'quarto'
+let lista = document.querySelector('ul')//seleziono la lista 
+let item = document.createElement('li')//ceo l'elemento 
+item.textContent = 'quarto'//assegno il testo 
 lista.appendChild(item)
 }
 es24()
@@ -442,8 +479,8 @@ es24()
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
 function es25(){
-  document.getElementById('myList')
-  myList.textContent = ''
+  document.getElementById('myList')//seleziono la lista 
+  myList.textContent = ''// ne elimino il contenuto 
 
 }
 es25()
@@ -452,9 +489,9 @@ es25()
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
 function es26(){
-  let tr = document.querySelectorAll('tr')
-  for (let i = 0 ; i< tr.length; i++){
-    tr[i].classList.add('test')
+  let tr = document.querySelectorAll('tr')// seleziono ll'elemento 
+  for (let i = 0 ; i< tr.length; i++){//lo ciclo
+    tr[i].classList.add('test')// e a ognuno di essi aggiungo la classe
 
   }
 
