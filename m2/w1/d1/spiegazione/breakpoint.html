@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0 minimum-csale=0.9, maximum-scale=1.1">
+    <!--la proprieta initial scale imposta lo zoom iniziale quando la pagina viene caricata 
+    la proprieta user scalable permette all'utente di zoommare/ridimensionare la pagina  la pagina con minumscale e maximun scale posso stabilire quanto l'utente puo zommare
+    viewport http://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/ 
+ -->
+    <title>Document</title>
+    <style> body{
+        background-color: red;
+    }
+
+@media screen and (min-width: 480px) { /* mobile first */
+    body {
+        background-color: yellow;/* smartphone landscape */
+    }
+}
+@media screen and  (min-width: 768px) {/*  tablet  */
+    body {
+        background-color: green;
+    }
+}
+@media screen and  (min-width: 1024px) {/*  laptop  */
+    body {
+        background-color: blue;
+    }
+}
+@media screen and  (min-width: 1200) {/*  desktop  */
+    body {
+        background-color: grey;
+    }
+}
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
