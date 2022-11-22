@@ -136,25 +136,19 @@ h1 {
 
   
 }
-
+#underline{
+  width: 90%;
+  opacity: 0.5;
+}
 
 @media screen and (min-width: 1200px) {
   article h1 {
-    font-size: 2.2em;
+    font-size: 3.5em;
     position: absolute;
 
 }
-#underline{
-  position: relative;
-  top: 0.8em;
-  left: 14em;
-  width: 380px;
-  padding-top: 1.5em;
-  opacity: 0.5;
-  margin-bottom: 1.3em;
 }
 
-}
 
 @media screen and (min-width: 768px) {
   #underline {
@@ -162,11 +156,17 @@ h1 {
   }
 }
 @media screen and (min-width: 1200px) {
-  #underline {
-    width: 45%;
-    float: right;
-    margin-right: 15%;
-  }
+#underline{
+  position: relative;
+  top: 0.8em;
+  left: 14em;
+  width: 30%;
+  margin-right: 40%;
+  margin-bottom: 5%;
+  padding-top: 1.5em;
+  opacity: 0.5;
+ 
+}
 }
 p,
 address,
