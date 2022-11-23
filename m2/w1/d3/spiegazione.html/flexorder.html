@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex order</title>
+    <style>
+        body{
+            height: 100%;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            background: #e3e3e3;
+            border: 2px solid black;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #box1{
+            background: red;
+            border: 1px solid black;
+            -webkit-order: 2
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<div id="box 1">box 1 </div>
+<div id="box 2">box 2</div>
+<div id="box 3">box 3 </div>
+
+    </div>
+</body>
+</html>

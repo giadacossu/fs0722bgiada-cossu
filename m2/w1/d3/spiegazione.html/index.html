@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <style>
+        nav {
+            display: flex;
+            background: orangered;
+            color: white;
+            border-radius: 3px;
+            padding: 1em;
+            font-family: sans-serif;
+        }
+
+        nav>ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex: 3;
+        }
+
+        nav li {
+            margin-right: 1em;
+        }
+
+        nav input {
+            flex: 1;
+        }
+        nav form{
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+        }
+
+        nav button {
+            background-color: white;
+            border: 0;
+            border-radius: 1em;
+            color: orangered;
+        }
+        @media screen and (max-width:575px) {
+            nav{
+                flex-direction: column;
+            }
+            nav ul {
+                flex-direction: column;
+                margin-bottom: 1em;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>logo</li>
+            <li>home</li>
+            <li>products </li>
+            <li>service</li>
+        </ul>
+        <input type="search" placeholder="SEARCH"> <button>go</button>
+        </input>
+    </nav>
+</body>
+
+</html>
