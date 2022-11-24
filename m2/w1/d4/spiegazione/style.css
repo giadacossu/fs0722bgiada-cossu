@@ -1,0 +1,30 @@
+#container {
+  width: 80%;
+  height: 50%;
+  border: 1px solid blue;
+  margin: auto;
+  z-index: 0;
+  position: absolute;
+}
+#container img {
+  width: 80%;
+}
+
+.pesci {
+  width: 100px;
+  position: relative;
+  bottom: 100px;
+  z-index: 1;
+  animation-name: mymove;
+  animation-duration: 6s;
+  animation-iteration-count: 5;
+  animation-timing-function: ease;
+}
+@-webkit-keyframes mymove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(800px, 0) rotate(-10deg);
+  }
+}
