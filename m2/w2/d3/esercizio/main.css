@@ -20,7 +20,8 @@ body header nav {
   justify-content: space-around;
 }
 body header nav p {
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: bold;
 }
 body header nav ul {
   display: flex;
@@ -38,16 +39,20 @@ body header nav ul li:hover {
 body #containerbig {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 200px;
 }
-body #containerbig div h1 {
+body #containerbig .container h1 {
   font-size: 60px;
 }
-body #containerbig div .btn {
+body #containerbig .container p {
+  width: 700px;
+}
+body #containerbig .container .btn {
   background-color: #316af6;
   border-color: #316af6;
 }
-body #containerbig div .btn1 {
+body #containerbig .container .btn1 {
   background-color: #ef8d34;
   border: #ef8d34;
 }

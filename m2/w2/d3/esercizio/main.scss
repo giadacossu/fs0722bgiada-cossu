@@ -11,7 +11,9 @@ header{
         display: flex;
         justify-content: space-around;
         p{
-           font-weight: 600;
+            font-size: 30px;
+            font-weight:bold ;
+         
         }
         ul{
             display: flex;
@@ -32,13 +34,18 @@ header{
 #containerbig{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 200px;
 
 
-    div{
+    .container{
        
     h1{
         font-size: 60px;
+    }
+    p{
+      width: 700px;
+  
     }
   .btn{
     background-color:#316af6;
