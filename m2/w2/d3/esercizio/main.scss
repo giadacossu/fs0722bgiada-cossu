@@ -1,0 +1,57 @@
+@import'variabili';
+@import'bottoni';
+
+body{
+background-color: $purple;
+
+header{
+    background-color: $purple;
+    color: $nero;
+    nav{
+        display: flex;
+        justify-content: space-around;
+        p{
+           font-weight: 600;
+        }
+        ul{
+            display: flex;
+            
+            li{
+               padding: 10px;
+               color: $bianco;
+               list-style: none;
+               &:hover{
+                color: orange;
+                transform: scale(1.5);
+                cursor: pointer;
+               }
+            }
+        }
+    }
+}
+#containerbig{
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+
+
+    div{
+       
+    h1{
+        font-size: 60px;
+    }
+  .btn{
+    background-color:#316af6;
+    border-color: #316af6;
+
+  }
+  .btn1{
+    background-color: #ef8d34;
+    border: #ef8d34;
+  }
+}
+}
+img{
+   width: 500px;
+}
+}

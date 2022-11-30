@@ -1,0 +1,11 @@
+.btn {
+  display: inline;
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+
+body {
+  width: 100%;
+  color: #4f4f4f;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,56 @@
+button {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 30px;
+  color: white;
+}
+button:hover {
+  transform: scale(1.5);
+}
+
+body {
+  background-color: #5b17bd;
+}
+body header {
+  background-color: #5b17bd;
+  color: black;
+}
+body header nav {
+  display: flex;
+  justify-content: space-around;
+}
+body header nav p {
+  font-weight: 600;
+}
+body header nav ul {
+  display: flex;
+}
+body header nav ul li {
+  padding: 10px;
+  color: white;
+  list-style: none;
+}
+body header nav ul li:hover {
+  color: orange;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+body #containerbig {
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+}
+body #containerbig div h1 {
+  font-size: 60px;
+}
+body #containerbig div .btn {
+  background-color: #316af6;
+  border-color: #316af6;
+}
+body #containerbig div .btn1 {
+  background-color: #ef8d34;
+  border: #ef8d34;
+}
+body img {
+  width: 500px;
+}/*# sourceMappingURL=main.css.map */
