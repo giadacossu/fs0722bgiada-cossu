@@ -1,0 +1,68 @@
+main {
+
+    display: flex;
+           margin: 0 $margin;
+           @media screen and (max-width:768px) {
+            display: block;
+            margin: 30px;
+            
+           }
+       div{
+          @media screen and(max-width:480px) {
+display: flex;
+flex-direction: column;
+align-items: center;            
+          }
+           form{
+               border: 1px solid black ;
+               padding:50px; 
+               @media screen and(max-width:480px) {
+                background-color: antiquewhite;
+                
+               }
+           }
+       }
+   
+       button {
+           background-color: orange;
+           padding: 10px;
+@media screen and (max-width:480px) {
+width: 200px;
+
+}
+
+    
+       }
+   
+       .contenitore2 {
+           margin: 0 100px;
+       }
+   
+       aside {
+        ul{
+
+          @media screen and (max-width:768px) {
+            display: flex;
+        justify-content: center;
+        }
+        @media screen and (max-width:480px) {
+        display: flex;    
+        }
+           li {
+               border-bottom: 1px solid black;
+            width: 100px;
+               list-style: none;
+               margin: 50px;
+            @media screen and(max-width:480px) {
+                margin: 10px;
+                
+            }
+   
+           }
+        
+             
+           }
+       }
+   
+    
+   }

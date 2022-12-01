@@ -1,0 +1,55 @@
+@mixin devices($breakpoint) {
+    @if $breakpoint == tablet {
+    @media only screen and (max-width:680px){
+         @content;
+    }
+}
+
+@if $breakpoint == mobile {
+    @media only screen and (max-width:481px){
+        @content;
+    }
+    
+}
+}
+.responsive{
+    background: yellow;
+
+    @include devices(tablet){
+        background: lightblue;
+    }
+    @include devices(mobile){
+     background: aquamarine;
+        @content;
+    }
+    }
+
+    
+
+    @mixin devices ($breakpoint) {
+        @if $breakpoint == tablet {    
+            @media only screen and (max-width: 680px) {
+              @content;
+            }
+          }
+         
+          @if $breakpoint == mobile {
+            @media only screen and (max-width: 481px) {
+              @content;
+            }
+          }
+        }
+    
+    // gestico il responsive
+    .responsive {
+        background: yellow;
+    
+        @include devices(tablet) {
+            background: lightblue;
+            // codice per tablet
+        }
+    
+        @include devices(mobile) {
+            background: aquamarine;
+        }
+    }
