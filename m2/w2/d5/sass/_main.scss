@@ -1,0 +1,34 @@
+main{
+    .contenitore1{ 
+        
+               height: 60vh;
+          background-image: url(/img/pexels-aleksandar-pasaric-325185.jpg);
+          background-position:center;
+  button{
+        background-color: $coloreSfondo;
+        color: $coloreTesto;
+        border: $coloreSfondo;
+    }
+}
+.contenitore2{
+    margin-bottom: $margine;
+}
+.contenitore3{
+    margin-bottom: $margine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .immagini{
+display: flex;
+justify-content: space-around;
+
+  img{
+        width: 10%;
+        
+    }
+    }
+  
+}
+   }
+ 
+    

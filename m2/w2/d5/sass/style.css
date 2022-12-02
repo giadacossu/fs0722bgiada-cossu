@@ -1,0 +1,46 @@
+header {
+  background-color: #6915f1;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+header a {
+  color: red;
+  text-decoration: none;
+  margin: 10px;
+}
+header a:hover {
+  color: white;
+}
+
+main .contenitore1 {
+  height: 60vh;
+  background-image: url(/img/pexels-aleksandar-pasaric-325185.jpg);
+  background-position: center;
+}
+main .contenitore1 button {
+  background-color: #6915f1;
+  color: white;
+  border: #6915f1;
+}
+main .contenitore2 {
+  margin-bottom: 200px;
+}
+main .contenitore3 {
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .contenitore3 .immagini {
+  display: flex;
+  justify-content: space-around;
+}
+main .contenitore3 .immagini img {
+  width: 10%;
+}
+
+footer {
+  background-color: #6915f1;
+  color: white;
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */

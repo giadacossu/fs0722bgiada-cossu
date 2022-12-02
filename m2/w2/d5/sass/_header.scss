@@ -1,0 +1,14 @@
+@import 'variabili';
+header{
+    background-color: $coloreSfondo;
+    color: $coloreTesto;
+    font-family: $font;
+    a{
+    color: red;
+    text-decoration: none;
+    margin: 10px;
+    &:hover{
+        color:$coloreTesto ;
+    }
+    }
+}
