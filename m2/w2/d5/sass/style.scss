@@ -4,3 +4,8 @@
 @import 'footer';
 @import 'if';
 
+
+%hover{
+    transform: scale($zoom);
+
+}

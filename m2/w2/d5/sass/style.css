@@ -12,6 +12,9 @@ header a:hover {
   color: white;
 }
 
+main {
+  font-family: "Poppins", sans-serif;
+}
 main main {
   background-color: black;
   color: white;
@@ -27,8 +30,8 @@ main .contenitore1 button {
   border: #6915f1;
 }
 main .svg {
-  /*background-image: url(/svg/svg1.jpeg);
-   background-position:cover;*/
+  background-image: url(/svg/svg1.jpeg);
+  background: no-repeat;
 }
 main .svg .contenitore2 {
   margin-bottom: 200px;
@@ -46,9 +49,26 @@ main .svg .contenitore3 .immagini {
 main .svg .contenitore3 .immagini img {
   width: 10%;
 }
+main .contenitore4 {
+  margin-bottom: 50px;
+}
+main .contenitore4 img {
+  width: 8%;
+  display: flex;
+  align-items: center;
+}
 
 footer {
   background-color: #6915f1;
   color: white;
   padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+footer .copy {
+  text-align: center;
+  margin-top: 20px;
+}
+
+header a:hover, main .contenitore1 button:hover, main .svg .contenitore2 article:hover, main .svg .contenitore3 .immagini img:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=style.css.map */

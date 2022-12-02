@@ -9,6 +9,7 @@ header{
     margin: 10px;
     &:hover{
         color:$coloreTesto ;
+       @extend %hover;
     }
     }
 }
