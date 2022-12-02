@@ -1,0 +1,19 @@
+@import 'variabili';
+@mixin colors {
+    @if $template == white {
+        main {
+
+            background-color: $colorw;
+            color: $colord;
+        }
+    }
+
+    @else if $template == black {
+
+        main {
+            background-color: $colord;
+            color: $colorw;
+        }
+
+    }
+}

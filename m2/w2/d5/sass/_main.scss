@@ -1,4 +1,7 @@
+@import 'if';
+
 main{
+@include colors;
     .contenitore1{ 
         
                height: 60vh;
@@ -10,8 +13,13 @@ main{
         border: $coloreSfondo;
     }
 }
+.svg{
+   /*background-image: url(/svg/svg1.jpeg);
+    background-position:cover;*/
+
 .contenitore2{
     margin-bottom: $margine;
+ 
 }
 .contenitore3{
     margin-bottom: $margine;
@@ -28,7 +36,7 @@ justify-content: space-around;
     }
     }
   
-}
+}}
    }
  
     

@@ -12,6 +12,10 @@ header a:hover {
   color: white;
 }
 
+main main {
+  background-color: black;
+  color: white;
+}
 main .contenitore1 {
   height: 60vh;
   background-image: url(/img/pexels-aleksandar-pasaric-325185.jpg);
@@ -22,20 +26,24 @@ main .contenitore1 button {
   color: white;
   border: #6915f1;
 }
-main .contenitore2 {
+main .svg {
+  /*background-image: url(/svg/svg1.jpeg);
+   background-position:cover;*/
+}
+main .svg .contenitore2 {
   margin-bottom: 200px;
 }
-main .contenitore3 {
+main .svg .contenitore3 {
   margin-bottom: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .contenitore3 .immagini {
+main .svg .contenitore3 .immagini {
   display: flex;
   justify-content: space-around;
 }
-main .contenitore3 .immagini img {
+main .svg .contenitore3 .immagini img {
   width: 10%;
 }
 
