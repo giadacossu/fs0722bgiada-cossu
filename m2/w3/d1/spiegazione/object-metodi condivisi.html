@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object metodi condivisi </title>
+</head>
+<body>
+    
+<!-- tipi di dato pèrimitiva assegno un valore a una varibaile-->
+<!-- gli oggetti invece sonoo tipi di dato complessi -> quando assegno un oggetto a una varibiale non fa in modo che la variabike contenga effettivamente l'oggetto, ma contiene un rifermiemnto all'oggetto -->
+    <script>
+var x = 10;
+var y = x;
+y=y +1;// y è 11 incrementare non ha influito sul valore di x
+// ciascuna variabile contiene il valore assegnato
+var persona = {nome:'mario', congnome:' rossi'}
+var altraPersona = persona;
+altraPersona.nome= 'giuseppe ';
+//se accediamo a nome dell'oggetto persona anche essa ora è giuseppe 
+//sia persona che altraPersona contengono un riferimento alla stessa persona 
+//ogni modifica effettuata alla variabile persona si riflette anche su altraPersona 
+
+
+// toString() e valueOf()sono metodi condiivisi da tutti gli oggetti ))
+//to Stirng restituisce una versiona stringa dell'oggetto
+var x = new object(32);
+x.toString()
+// se l'oggetto non è riconducibile a un tipo di dato primitivo 
+var persona = new object({nome:'mario', cognome:'rossi'})
+persona.toString(); //restituisce {object object }
+//valueOf -> restituisce il valore di un oggetto 
+
+var x = new object (32)
+x.valueOf ()
+    </script>
+</body>
+</html>

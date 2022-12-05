@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--con la notazione letterale possiamo costruire degli oggetti rapidamente 
+    immaginiamo di aver bisogno di più oggetti dello stesso tipo 
+ad esempio più oggetti persona che condividono la stessa struttura -->
+<script>
+    var persona= {
+        nome: 'mario',
+        cognome:'rossi',
+        indirizzo:'via garibaldi , 50 -roma',
+        email:'mario.rossi@epicode.it',
+        mostraNomeCompleto: function(){},
+        calcolaCodiceFiscali: function(){},
+
+    }
+    // se usiamo la notazione letterale saremo costretti a ripetere la definizione per ogni oggetto 
+    //codice non riutilizzabile
+    // per ridefinire da zero oggetti che hanno la stessa struttura esiste un costruttore
+    // un costruttore è una funziona javascript che invochiamo con l'operatore new
+    function persona( ){
+        this.nome = '';
+        this.cognome = '';
+        this.indirizzo = '';
+        this.email = '';
+        this.mostraNomeCompleto =function(){};
+        this.calcoloCodiceFiscale = function(){};
+
+    } // per creare un oggetto di tipo persona invoco la funzione premettendo l'operatore new 
+    var marioRossi = new persona ();
+    marioRossi.nome = 'mario';
+    marioRossi.cognome = ' rossi';
+    var giuseppeVerdi = new persona ();
+    giuseppeVerdi.nome= 'giuseppe';
+    giuseppeVerdi.cognome = 'verdi';
+
+//puo anche essere parametrizzato
+ function persona (nome, cognome){
+    this.nome=nome;
+    this.cognome = cognome;
+    this.indirizzo = '';
+    this.email ='';
+    this.mostraNomeCompleto = function (){}
+    this.calcolaCodiceFiscale = function(){};
+
+ }
+var narioRossi = new persona ('merio', 'rossi')
+var giuseppeVerdi = new persona ('giuseppe', 'verdi ') 
+</script>
+</body>
+</html>

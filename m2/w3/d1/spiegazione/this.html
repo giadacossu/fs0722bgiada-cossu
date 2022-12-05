@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object this</title>
+</head>
+<body>
+
+    <script>
+        var teacher = {
+            name:'federico',
+            surname:'de ambrosis ',
+            sayHello: function(){
+                alert("hello wordl, i'm " + ""  + this.name + " " + this.surname )
+            }
+        }
+        teacher.sayHello()
+
+//possimao bypassare this accedendo a una variabile esterna -> rende il codice instabile
+let user ={
+    name: 'john',
+    age: 30,
+    sayHi(){
+        alert(user.name)// accedo alla variabile esterna anzichè this
+
+    }
+};
+/*let admin= user;
+user= null; //sovrascrivo user
+admin.sayHi(); // errore -> non possiamo leggere la proprietà name di null*/
+
+//this -> puo essere utilizzata anche fuori dagli oggetti in qualsiasi funzione anche se quindi non è il metodo dell'oggetto 
+function sayHi(){
+    alert(this.name); 
+}
+
+sayHi()
+//le arrow function non hanno this 
+
+
+    </script>
+</body>
+</html>

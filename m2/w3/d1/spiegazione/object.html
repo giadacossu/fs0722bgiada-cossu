@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oggetti</title>
+</head>
+
+<body>
+
+    <script>
+        var oggettoVuoto = {} // notazione letterale che usa le grafe. dichiaro un oggetto vuoto
+        var persona = { 'nome': 'mario', 'cognome': 'rossi' }// inseri
+        var persona = { nome: 'mario', cognome: 'rossi' }
+        var persona = { nome: 'mario', 'cognome': rossi }
+        var persona = {
+            nome: 'mario',
+            cognome: 'rossi',
+            indirizzo: {
+                via: 'via roma',
+                numero: 1,
+                cap: '20100'
+            }
+        }
+        //per accedere alle properieta dell'oggetto
+        var nome = persona.nome; // più utilizzato 
+        var nome = persona['nome']//obbligatorio quando il nome non segue le regole di naming 
+        //se provo a accederre a una proprietà non definita questo mi dara undefined
+        var eta = persona.eta; // undefined
+        //creazione per deinizione 
+        // assegnamo un valore a una proprieta che non è definita nel nostro oggetto 
+        persona.eta = 42;
+//gli oggetti sono entità dinamiche, possono evolversi/ modificarsi durante l'esecuzione di uno script -> definizione incrementale 
+//l'oggetto avrà una rappresentazione base che puo essere arricchita via via con le proprieta che vogliamo
+
+// metodi sono le attivita che un oggetto puo compiere 
+function visualizzaNomeCognome (){
+    return 'mario rossi'
+    persona.nomeCognome = visualizzaNomeCognome
+    //asseganemo alla proprieta la funzione tramite il suo nome (non il risultato della chiamata della funzione )
+    //la proprieta nomeCognome contiene una funzione e quindi è un metodo 
+    var nomeCognome = persona.nomeCognome();//per eseguirlo
+    persona.nomeCognome = function(){//per eseguirlo metodo alternativo non di grande utilita
+        return 'mario rossi'
+    }
+}
+// per leggere il valore corrente delle proprieta
+
+persona.nomeCognome = function() { return this.nome + '' + this.cognome}
+
+
+
+
+    </script>
+</body>
+
+</html>

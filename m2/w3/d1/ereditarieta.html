@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--possiamo modifcicare gli oggetti anche dopo la creazione -->
+    <script>
+       /* var marioRossi = new persona ('mario', 'rossi ');
+        var giuseppeVerdi = new persona ('giusepe ', 'verdi');
+        marioRossi.telefono = '6553655466' //posso aggiungere qualcos alll'oggrtto  senza influenzare la struttura di giuseppe verdi 
+        // quando creo oggetti posso partire da una struttura comune  e poi si personalizza con le nostre esigenze 
+        // prototype -> persona.prototype.telefono = '255654236'
+        // tutti gli oggetti che avevamo creato col costruttore persona () ora hanno anche la proprieta telefono */
+
+
+        function studente ( name, age){
+            this.name =name;
+            this.age =age;
+        }
+
+        var studente1 = new studente ('luigi bianchi ', 43)
+        var studente2 = new studente (' mario rossi ', 32)
+        console.log (studente1, studente2)
+ studente.prototype.skills = []; // skills è accessibile come se fosse una proprieta dell'oggetto
+ console.log(studente1, studente2)
+
+ studente1.skills = ['html', 'css', 'js']
+ studente2.skills =[ 'surfare', 'ballare', 'suonare']
+
+/* eredita prototypale
+ se una proprieta non si trova nell'oogetto si cerca nel prototipo*/
+    </script>
+</body>
+</html>
