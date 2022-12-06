@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        class animal {
+            constructor (name, weight)
+        {
+            this.name = name;
+            this.weight = weight;
+        }
+mangia(){
+    return` ${this.name} sta mangiando `
+}
+dorme(){
+    return` ${this.name} sta dormendo `
+}
+sveglia(){
+    return` ${this.name} sta  si sveglia `
+}
+    
+}
+class gorilla extends animal{
+    constructor (name, weight){
+        super (name, weight)
+    }
+sale_sugli_alberi(){
+    return `${this.name} una bestia di ${this.weight} e sta gridando `
+}
+ vigoroso (){
+    return `${super.mangia()} ${this.grida()}`
+ }
+
+
+}
+function display ( content ){
+    console.log(content)
+
+
+}
+
+const gorills = new gorilla ('george', '160kg')
+display (gorilla.mangia )
+display(gorilla.dorme)
+display(gorilla.sveglia)
+display(gorilla.sale_sugli_alberi)
+display(gorilla.grida)
+display(gorilla.vigoroso)
+
+
+</script>
+
+</body>
+</html>
