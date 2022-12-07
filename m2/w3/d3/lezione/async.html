@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <script>
+
+        function startedDelayed(){ // questa funzione viene eseguita (riga 21)
+return new promise ( resolve => { // risolvo la promise
+    setTimeout(() => {//impiego 5 secondi a scrivere 'it ends'
+        resole('it ends');
+    }, 5000); // dopo 5 seconi startDelayde ha finito e si leggera riga 22 l'esecuzione del console.log
+})
+        }
+        async function asyncfunction(){ // async è una keyword che permette di dichiarare uns funzione asyncrona 
+            console.log('start async');// cioe una funzione che contiene un'operazione asyncrona
+            let ends = await startedDelayed()// await sospende l'indicazione in attesa che la promise associata venga risolta 
+            console.log(ends);
+        }
+    </script>
+</body>
+</html>
